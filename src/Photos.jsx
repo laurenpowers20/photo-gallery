@@ -4,6 +4,8 @@ import rockstar from "./images/rockstar.jpeg";
 import skull from "./images/skull.jpeg";
 import ramen from "./images/ramen.jpeg";
 import llama from "./images/llama.jpeg";
+import cactus from "./images/cactus.jpeg";
+import eel from "./images/eel.jpeg";
 import Gallery from "./Gallery";
 
 function Photos() {
@@ -11,7 +13,7 @@ function Photos() {
   const galleryImages = [
     {
       img: `${unisphere}`,
-      caption: "Unisphere",
+      caption: "Queens rules",
     },
     {
       img: `${pizza}`,
@@ -32,6 +34,14 @@ function Photos() {
     {
       img: `${llama}`,
       caption: "Which way to Machu Picchu?",
+    },
+    {
+      img: `${eel}`,
+      caption: "Good Day to you",
+    },
+    {
+      img: `${cactus}`,
+      caption: "Quite dry in here",
     },
   ];
 
