@@ -1,0 +1,139 @@
+.galleryWrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.galleryWrap .single {
+  width: 200px;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+.galleryWrap .single img {
+  max-width: 100%;
+}
+
+.galleryWrap .single img:hover {
+  transform: scale(1.02);
+}
+
+.sliderWrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sliderWrap .btnClose,
+.sliderWrap .btnPrev,
+.sliderWrap .btnNext {
+  position: fixed;
+  cursor: pointer;
+  font-size: 3rem;
+  opacity: 0.6;
+  color: white;
+  z-index: 9999;
+}
+
+.btnNext:hover,
+.btnPrev:hover,
+.btnClose:hover {
+  opacity: 1;
+}
+
+.sliderWrap .btnClose {
+  top: 40px;
+  right: 40px;
+}
+
+.sliderWrap .btnPrev {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 40px;
+}
+
+.sliderWrap .btnNext {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 40px;
+}
+
+.fullScreenImage {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fullScreenImage img {
+  max-width: 100%;
+  max-height: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sliderWrap .caption {
+  position: fixed;
+  top: 73%;
+  font-size: 2rem;
+  color: #fff;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 4px;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 700px) {
+  .galleryWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+
+  .galleryWrap .single {
+    width: 150px;
+  }
+
+  .sliderWrap .btnClose {
+    top: 40px;
+    left: 40px;
+    color: white;
+  }
+  .sliderWrap .btnPrev {
+    color: black;
+  }
+
+  .sliderWrap .btnNext {
+    color: black;
+  }
+
+  .sliderWrap .btnClose,
+  .sliderWrap .btnPrev,
+  .sliderWrap .btnNext {
+    font-size: 2rem;
+    opacity: 0.6;
+  }
+}
