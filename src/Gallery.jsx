@@ -4,8 +4,8 @@ import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import { BsXSquareFill } from "react-icons/bs";
 import "./Gallery.css";
 
-//Pass in your gallery images in a variable
-const Gallery = ({ galleryImages }) => {
+//Pass in your gallery images
+function Gallery({ galleryImages }) {
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
 
@@ -63,6 +63,6 @@ const Gallery = ({ galleryImages }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Gallery;
