@@ -11,7 +11,7 @@ function App() {
           href="https://react-portfolio-lauren-powers.netlify.app/features"
           rel="noreferrer"
         >
-          <button className="button-54">Back to Lil' Portfolio </button>{" "}
+          <button className="button-54">Back</button>{" "}
         </a>{" "}
       </div>
     </>
